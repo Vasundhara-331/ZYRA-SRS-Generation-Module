@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-navy: #0A192F;
+  --primary-hover: #1E3A8A;
+  --border-grey: #E2E8F0;
+  --bg-white: #FFFFFF;
+  --text-main: #0F172A;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #0F172A;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  /* Enterprise SaaS Buttons */
+  .btn-standard, .btn-primary {
+    background-color: #0A192F;
+    color: #FFFFFF;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-standard:hover, .btn-primary:hover {
+    background-color: #1E3A8A;
+  }
+  
+  .btn-standard:active, .btn-primary:active {
+    transform: scale(0.98);
+  }
+  
+  .btn-standard:disabled, .btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .btn-secondary {
+    background-color: #FFFFFF;
+    color: #0A192F;
+    border: 1px solid #E2E8F0;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #F8FAFC;
+    border-color: #CBD5E1;
+  }
+  
+  .btn-secondary:active {
+    transform: scale(0.98);
+  }
+
+  /* Enterprise Input Fields */
+  .input-field {
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    padding: 1rem;
+    color: #0F172A;
+    transition: all 0.2s;
+    font-size: 1rem;
+  }
+  
+  .input-field:focus {
+    border-color: #0A192F;
+    outline: none;
+    border-width: 2px;
+  }
+
+  /* Requirement Textareas (The Focus) */
+  .textarea-standard {
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    padding: 1.5rem;
+    color: #0F172A;
+    transition: all 0.2s;
+    font-size: 16px;
+    line-height: 1.6;
+    height: 250px;
+    overflow-y: auto;
+  }
+  
+  .textarea-standard:focus {
+    border-color: #0A192F;
+    border-width: 2px;
+    outline: none;
+  }
+
+  /* Professional Scrollbar for Textareas */
+  .textarea-standard::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .textarea-standard::-webkit-scrollbar-track {
+    background: #F1F5F9;
+  }
+  
+  .textarea-standard::-webkit-scrollbar-thumb {
+    background: #0A192F;
+    border-radius: 9999px;
+  }
+
+  /* Section Card Layout */
+  .card-layout {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.2s;
+  }
+}
