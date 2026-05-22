@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ZYRA – SRS Generation Module
 
-## Getting Started
+This is the first module created for ZYRA: AI-Driven Web Development Agent for Requirement-Based UI/UX Design.                                                                                       
+This is an AI-powered **Software Requirements Specification (SRS) Generation System** that transforms user prompts into structured and professional SRS documents.  
+Built to simplify requirement gathering, documentation, and project planning for developers, startups, and teams.
 
-First, run the development server:
+---
+
+## Features
+
+- AI-powered SRS document generation
+- Uses **Ollama Phi-3** for local LLM inference
+- Converts prompts into structured software requirements
+- Easy document export in JSON, PDF and DOCX formats
+
+---
+
+Install Ollama from:
+
+https://ollama.com
+
+Pull the Phi-3 model:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+ollama pull phi3
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Clone the Repository
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/Vasundhara-331/ZYRA-SRS-Generation-Module.git
+```
 
-## Learn More
+### Navigate to the Project Directory
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+cd ZYRA-SRS-Generation-Module
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Start the server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm install
+npm run dev
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Run the module and provide project details or prompts to generate an SRS document.
+
+Example prompt:
+
+```text
+Create an SRS for a smart hospital management system with patient tracking and appointment scheduling.
+```
+
+---
+## Workflow
+
+1. User enters software/project requirements
+2. Prompt is processed using Ollama Phi-3
+3. The model generates structured SRS content
+4. Output is displayed/generated as documentation
+
+---
+GitHub:  
+https://github.com/Vasundhara-331
+
+Repository:  
+https://github.com/Vasundhara-331/ZYRA-SRS-Generation-Module
